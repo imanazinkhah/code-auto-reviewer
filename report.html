@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Code Auto Reviewer</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .file {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .score {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: #f1f3f5;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .warning {
+            color: orange;
+        }
+
+        .danger {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔍 Code Auto Reviewer</h1>
+
+    <div class="file">
+        File: E:\python_work\Code Auto Reviewer\sample.py
+    </div>
+
+    <div class="score">
+        ⭐ 70/100
+    </div>
+
+    <div class="section">
+
+        <h2>📋 Review Summary</h2>
+
+        <div class="item">
+            Syntax:
+            <span class='success'>✅ PASS</span>
+        </div>
+
+        <div class="item">
+            Quality:
+            4 issues
+        </div>
+
+        <div class="item">
+            Functions:
+            1 found
+        </div>
+
+        <div class="item">
+            Security:
+            1 issues
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>⚠️ Quality Issues</h2>
+
+
+        <div class="item warning">
+
+            Line 18:
+            Variable name 'x' is too generic.
+
+        </div>
+
+        <div class="item warning">
+
+            Line 19:
+            Variable name 'y' is too generic.
+
+        </div>
+
+        <div class="item warning">
+
+            Line 21:
+            Variable name 'x' is too generic.
+
+        </div>
+
+        <div class="item warning">
+
+            Line 21:
+            Variable name 'y' is too generic.
+
+        </div>
+
+
+    </div>
+
+    <div class="section">
+
+        <h2>🔐 Security Issues</h2>
+
+
+        <div class="item danger">
+
+            Line 16
+
+            <br>
+
+            Severity: HIGH
+
+            <br>
+
+            Possible hard-coded secret: password
+
+        </div>
+
+
+    </div>
+
+    <div class="section">
+
+        <h2>🔧 Functions</h2>
+
+
+        <div class="item">
+
+            <strong>calculate_total</strong>
+
+            <br>
+
+            Line: 1
+
+            <br>
+
+            Parameters: 2
+
+            <br>
+
+            Lines: 13
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
